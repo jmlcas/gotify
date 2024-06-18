@@ -7,6 +7,7 @@ services:
       - "8008:80"
     restart: unless-stopped  
     environment:
+      - GOTIFY_DEFAULTUSER_NAME=User
       - GOTIFY_DEFAULTUSER_PASS=p4ssw0rd
       - TZ=Europe/Madrid
     volumes:
