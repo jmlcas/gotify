@@ -1,11 +1,11 @@
 services:
 
   gotify:
-    image: gotify/server:latest     # gotify/server-arm7
+    image: gotify/server:latest
     container_name: Gotify
     ports:
       - "8008:80"
-    restart: unless-stopped  
+    restart: unless-stopped
     environment:
       - GOTIFY_DEFAULTUSER_NAME=User
       - GOTIFY_DEFAULTUSER_PASS=p4ssw0rd
