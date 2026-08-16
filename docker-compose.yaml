@@ -12,4 +12,3 @@ services:
       - TZ=Europe/Madrid
     volumes:
       - ./data:/app/data
-      
